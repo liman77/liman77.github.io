@@ -1,0 +1,92 @@
+a{
+	text-decoration:none;
+	
+}
+#us{
+    position:absolute;
+    font-size:7px;
+	left:1529px;
+	top:78px;
+	color:#oooooo;
+	opacity:0.1;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+ /*ВНЕШНИЙ ВИД МЕНЮ*/
+.side{
+	width:200px;
+	margin:20px;
+}	  
+.menu a{
+    background:#782128;
+	color:#FFFFFF;
+    padding:10px;
+	display:block;
+	border-bottom:1px solid #ffffff;
+    transition:0.5s all;
+}
+.menu a:hover{
+	background:#3A54FF;
+    padding:10px 0 10px 20px;	
+}
+.menu li:last-child a,
+.menu li .menu__drop li:last-child a{
+	border-bottom:0;
+}
+.menu li .menu__drop li a{
+	border-bottom:1px solid #ffffff;
+}
+
+/*ВСПЛЫВАЮЩЕЕ МЕНЮ*/
+.menu__list{
+	 position:relative;
+     text-align:center;
+	 /*font-weight:bold;*/
+} 
+.menu__drop{
+	 position:absolute;
+	 width:100%;
+     top:49em;
+     opacity:0;
+     border-top:10px solid #4AFF21;
+     text-align:center;
+	
+}
+
+.menu__list:hover .menu__drop{
+	 opacity:1;
+     top:39px;
+}
+        /* АНИМАЦИЯ ЗАСТАВКА*/
+.earth{
+	width:600px;
+	padding:20px;
+	position:relative;
+	z-index:1;
+}		
+
+
+.sp{
+	position:absolute;
+	top:350px;
+	left:620px;
+	-webkit-animation:linear 25s orbita infinite;
+	z-index:0;
+}
+@-webkit-keyframes orbita{
+	0%{width:72px;}
+	24%{z-index:0;}
+	25%{left:1250px; top:130px;z-index:2;}
+	50%{width:350px;}
+	74%{z-index:2;}
+	75%{top:400px;left:0px;z-index:0;}
+	100%{width:72px;}
+}
+
+
+
+
+
